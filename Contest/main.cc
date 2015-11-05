@@ -3,7 +3,7 @@
 using namespace std;
 
 long GetScore(int p, int t) {
-  return max((p / 10) * 3, (p / 250) * t);
+  return max((p / 10) * 3, p - (p / 250) * t);
 }
 
 int main() {
